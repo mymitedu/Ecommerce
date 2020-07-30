@@ -78,7 +78,7 @@ You can add products to your cart.
 
 You can view cart.
 
-<img src="Ecommerce/TempToDelete/Display_Cart.png"> <br/>
+<img src="TempToDelete/Display_Cart.png"> <br/>
 
 ### Wrong Input Exception
 
@@ -110,5 +110,5 @@ Note: These screeshots not cover all features of our application. The functional
 
 **Created by:** <br/>
 **Name: Krishna Kumar Singh** <br/>
-**Email: krishna_singh1@epam.com** <br/>
+**Email: krishnaai265@epam.com** <br/>
 **Phone: +91-9368754996** 
