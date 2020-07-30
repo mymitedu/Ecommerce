@@ -48,31 +48,31 @@ Ecommerce, also known as electronic commerce or internet commerce, refers to the
 
 This is the initial screen of our E-Commerce Application.
 
-<img src="Ecommerce/TempToDelete/Welcome.png"> <br/>
+<img src="TempToDelete/Welcome.png"> <br/>
 
 ### Product Category
 
 Categories are displayed when you press 1.
 
-<img src="Ecommerce/TempToDelete/Product_Category.png"> <br/>
+<img src="TempToDelete/Product_Category.png"> <br/>
 
 ### Product SubCategory
 
 You can select Category to display Sub Category.
 
-<img src="Ecommerce/TempToDelete/Product_SubCategory.png"> <br/>
+<img src="TempToDelete/Product_SubCategory.png"> <br/>
 
 ### Products
 
 You can see products in a tabular formate.
 
-<img src="Ecommerce/TempToDelete/Products.png"> <br/>
+<img src="TempToDelete/Products.png"> <br/>
 
 ### Add To Cart
 
 You can add products to your cart.
 
-<img src="Ecommerce/TempToDelete/Add_To_Cart.png"> <br/>
+<img src="TempToDelete/Add_To_Cart.png"> <br/>
 
 ### Display Cart
 
@@ -84,25 +84,25 @@ You can view cart.
 
 Warning for wrong user input.
 
-<img src="Ecommerce/TempToDelete/Wrong_User_Input_Exception.png"> <br/>
+<img src="TempToDelete/Wrong_User_Input_Exception.png"> <br/>
 
 ### Remove from Cart Exception
 
 If remove wrong product which is not in your cart then it will warn you.
 
-<img src="Ecommerce/TempToDelete/Remove_from_Cart_Exception.png"> <br/>
+<img src="TempToDelete/Remove_from_Cart_Exception.png"> <br/>
 
 ### Display Cart Exeception
 
 You cart is empty.
 
-<img src="Ecommerce/TempToDelete/Dispaly_Cart_Exception.png"> <br/>
+<img src="TempToDelete/Dispaly_Cart_Exception.png"> <br/>
 
 ### Buy Now Exception
 
 Without Selection, you cannot buy Anything.
 
-<img src="Ecommerce/TempToDelete/Buy_Now_Exception.png"> <br/>
+<img src="TempToDelete/Buy_Now_Exception.png"> <br/>
 
 ### For more information download it now.
 
@@ -110,5 +110,5 @@ Note: These screeshots not cover all features of our application. The functional
 
 **Created by:** <br/>
 **Name: Krishna Kumar Singh** <br/>
-**Email: krishnaai265@epam.com** <br/>
+**Email: krishnaai265@gmail.com** <br/>
 **Phone: +91-9368754996** 
