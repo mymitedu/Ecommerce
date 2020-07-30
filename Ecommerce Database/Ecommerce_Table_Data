@@ -1,0 +1,23 @@
+Use Ecommerce;
+SHOW COLUMNS FROM Category;
+Insert into Category (Category_Name) values ("Electronics");
+insert into category (Category_Name) values ("Fashion");
+select * from category;
+
+Insert into SubCategory (category_Id, subCategory_Name) values (1, "Mobiles");
+Insert into SubCategory (category_Id, subCategory_Name) values (1, "Computers/Laptops");
+Insert into SubCategory (category_Id, subCategory_Name) values (1, "Home Appliances");
+Insert into SubCategory (category_Id, subCategory_Name) values (2, "Men");
+Insert into SubCategory (category_Id, subCategory_Name) values (2, "Women");
+select * from subcategory;
+
+SHOW COLUMNS FROM Product;
+Insert into Product (category_Id, subCategory_Id, product_Name, product_Price, product_stock) values (1,1,"iPhone",40.00,10);
+Insert into Product (category_Id, subCategory_Id, product_Name, product_Price, product_stock) values (1,1,"Samsung",60.00,6);
+Insert into Product (category_Id, subCategory_Id, product_Name, product_Price, product_stock) values (1,1,"Real Me",30.00,10);
+Insert into Product (category_Id, subCategory_Id, product_Name, product_Price, product_stock) values (1,2,"Dell",40.00,10);
+Insert into Product (category_Id, subCategory_Id, product_Name, product_Price, product_stock) values (1,2,"HP",60.00,6);
+Insert into Product (category_Id, subCategory_Id, product_Name, product_Price, product_stock) values (1,3,"Refrigerator",30.00,10);
+Insert into Product (category_Id, subCategory_Id, product_Name, product_Price, product_stock) values (2,4,"T-Shirt",40.00,8);
+Insert into Product (category_Id, subCategory_Id, product_Name, product_Price, product_stock) values (2,4,"Sarees",60.00,9);
+select * from Product;

@@ -1,0 +1,75 @@
+-- MySQL Workbench Forward Engineering
+
+SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
+SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
+SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
+
+-- -----------------------------------------------------
+-- Schema mydb
+-- -----------------------------------------------------
+-- -----------------------------------------------------
+-- Schema Ecommerce
+-- -----------------------------------------------------
+
+-- -----------------------------------------------------
+-- Schema Ecommerce
+-- -----------------------------------------------------
+CREATE SCHEMA IF NOT EXISTS `Ecommerce` ;
+USE `Ecommerce` ;
+
+-- -----------------------------------------------------
+-- Table `Ecommerce`.`Category`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `Ecommerce`.`Category` (
+  `Category_Id` INT NOT NULL AUTO_INCREMENT,
+  `Category_Name` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`Category_Id`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `Ecommerce`.`SubCategory`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `Ecommerce`.`SubCategory` (
+  `SubCategory_Id` INT NOT NULL AUTO_INCREMENT,
+  `Category_Id` INT NOT NULL,
+  `SubCategory_Name` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`SubCategory_Id`),
+  INDEX `Category Id_idx` (`Category_Id` ASC) VISIBLE,
+  CONSTRAINT `Match SubCategory to Category`
+    FOREIGN KEY (`Category_Id`)
+    REFERENCES `Ecommerce`.`Category` (`Category_Id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `Ecommerce`.`Product`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `Ecommerce`.`Product` (
+  `Product_Id` INT NOT NULL AUTO_INCREMENT,
+  `Category_Id` INT NOT NULL,
+  `SubCategory_Id` INT NOT NULL,
+  `Product_Name` VARCHAR(45) NOT NULL,
+  `Product_Price` DECIMAL NOT NULL,
+  `Product_Stock` INT NOT NULL,
+  PRIMARY KEY (`Product_Id`),
+  INDEX `Product to Category Id_idx` (`Category_Id` ASC) VISIBLE,
+  INDEX `Prodcut to SubCategory Id_idx` (`SubCategory_Id` ASC) VISIBLE,
+  CONSTRAINT `Product to Category Id`
+    FOREIGN KEY (`Category_Id`)
+    REFERENCES `Ecommerce`.`Category` (`Category_Id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `Prodcut to SubCategory Id`
+    FOREIGN KEY (`SubCategory_Id`)
+    REFERENCES `Ecommerce`.`SubCategory` (`SubCategory_Id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+SET SQL_MODE=@OLD_SQL_MODE;
+SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
+SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;

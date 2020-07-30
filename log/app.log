@@ -1,0 +1,3 @@
+2020-02-06 17:58:11.575 INFO [main] [com.epam.service.ProductService] [initializeStoreItems] [com.epam.service.ProductService.initializeStoreItems(ProductService.java:39)] - initializeStoreItems() started
+2020-02-06 17:58:11.578 INFO [main] [com.epam.service.ProductService] [getProducts] [com.epam.service.ProductService.getProducts(ProductService.java:28)] - getProducts() started
+2020-02-06 17:58:11.578 INFO [main] [com.epam.service.CartService] [isCartHasValue] [com.epam.service.CartService.isCartHasValue(CartService.java:20)] - isCartHasValue() started
